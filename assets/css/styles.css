@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Font*/
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    height: 100vh;
+}
+
+
+/*Typography*/ 
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+
+/*Typography ul, li*/
+
+li {
+    list-style: none;
+
+}
+
+li > a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*Navbar*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #EDE8F7;
+    padding-left: 3rem;
+    padding-right: 3rem;  
+}
+
+
+.pop-up-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+} 
+
+
+.navbar-nav a:link,
+.navbar-nav a:visited {
+    color: #7E4BBC;
+}
+
+.navbar-nav a:hover {
+    color: #858C8F;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.nav-item {
+    padding: 0 2rem 0 2rem;
+}
+
+
+
+.toggle-btn {
+    position: absolute;
+    right: 5%;
+
+    color: #858C8F;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Button Contact*/
+
+.button-contact {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 0.3rem;
+    border: 1px solid #7E4BBC;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    margin-left: 3rem;
+}
+
+.button-contact a:link,
+.button-contact a:visited {
+    color: #7E4BBC;
+}
+
+.button-contact:hover, 
+.button-contact a:hover {
+    background-color:#7E4BBC;
+    color: white;
+    font-weight: 550;
+    font-size: 22px;
+    opacity: 0.90;
+    transition: opacity 0.2s;
+    transition: font-size 0.2s;
+}
+
+.button-contact:active,
+.button-contact a:active {
+    background-color: #7E4BBC;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/*BreakPoints*/ 
+
+@media only screen and (max-width: 991px) {    
+
+    .navbar-brand{
+        display: block;
+    }
+
+    .navbar-brand img {
+        max-width: 125px;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .pop-up-menu {
+        flex-direction: column;        
+        position: absolute;
+        top: 90px;
+        right: 0;      
+        background-color: #EDE8F7;
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        padding-top: 2rem;
+    }
+
+    .navbar-nav{ 
+        flex-direction: column;
+
+  
+    }
+
+    .pop-up-menu {
+        
+    }
+
+    .navbar-nav li {
+        display: flex;
+        justify-content: flex-start;
+        border-top: 2px solid #7E4BBC;
+        align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 32px;
+    }
+
+}
+
