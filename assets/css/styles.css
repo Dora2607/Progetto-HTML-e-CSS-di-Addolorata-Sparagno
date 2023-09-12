@@ -30,69 +30,65 @@ h5 {
 
 /*Typography ul, li*/
 
-li {
-    list-style: none;
-
-}
-
-li > a {
-    text-decoration: none;
-    font-size: 18px;
-}
 
 a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
+
 /*Navbar*/
 
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    padding-left: 3rem;
+    padding-right: 3rem;  
+    background-color: #EDE8F7;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    background-color: #EDE8F7;
-    padding-left: 3rem;
-    padding-right: 3rem;  
-}
-
-
-.pop-up-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     
+
+    z-index: 100;
 }
 
-.navbar-nav {
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-} 
+    height: 100%;
+    background-color: #EDE8F7;
+    z-index: -1;
+
+}
+
+.navbar a {    
+    text-align: end;
+    margin-left: 3rem;
+}
 
 
-.navbar-nav a:link,
-.navbar-nav a:visited {
+.navbar a:link,
+.navbar a:visited {
     color: #7E4BBC;
 }
 
-.navbar-nav a:hover {
+.navbar a:hover {
     color: #858C8F;
     font-size: 22px;
     font-weight: 500;
 }
 
 
-.nav-item {
-    padding: 0 2rem 0 2rem;
+#check {
+    display: none;
 }
-
-
 
 .toggle-btn {
     position: absolute;
@@ -117,15 +113,16 @@ header {
     margin-left: 3rem;
 }
 
-.button-contact a:link,
-.button-contact a:visited {
+.button-contact:link,
+.button-contact:visited {
     color: #7E4BBC;
 }
 
-.button-contact:hover, 
 .button-contact a:hover {
-    background-color:#7E4BBC;
     color: white;
+}
+.button-contact:hover {
+    background-color:#7E4BBC;
     font-weight: 550;
     font-size: 22px;
     opacity: 0.90;
@@ -133,67 +130,85 @@ header {
     transition: font-size 0.2s;
 }
 
-.button-contact:active,
-.button-contact a:active {
+.button-contact:active {
     background-color: #7E4BBC;
     opacity: 1;
 }
 
 
 
-
-
-
-
-
 /*BreakPoints*/ 
 
-@media only screen and (max-width: 991px) {    
-
-    .navbar-brand{
-        display: block;
+@media only screen and (max-width: 991px) {
+    
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
-    .navbar-brand img {
-        max-width: 125px;
+    .header img {
+        display: flex ;
     }
+
+    .header::before {
+        padding-bottom: 1rem;
+    }
+ 
 
     .toggle-btn {
+        display: inline-flex;
+    }
+
+    #check:checked~.toggle-btn #menu-icon {
+        display: none;
+    } 
+
+    .toggle-btn #close-icon {
+        display: none;
+    }
+
+    #check:checked~.toggle-btn #close-icon {
         display: block;
-    }
+    } 
 
-    .pop-up-menu {
-        flex-direction: column;        
+    .navbar{ 
         position: absolute;
-        top: 90px;
-        right: 0;      
-        background-color: #EDE8F7;
-        backdrop-filter: blur(8px);
+        top: 96px;
+        left: 0;
         width: 100%;
-        height: 100%;
+        height: 0;
+        background-color: #EDE8F7;
+        backdrop-filter: blur(8px);        
+        padding-left: 2rem;
+        padding-right: 2rem;
+        overflow: hidden;
         transition: all 0.3s ease;
-        padding-top: 2rem;
+
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     }
 
-    .navbar-nav{ 
-        flex-direction: column;
-
-  
+    input[type=checkbox]:checked~.navbar {
+        height: fit-content;   
     }
 
-    .pop-up-menu {
+   
+
+    .navbar a {
+        display: block;
+        border-top: 2px solid #7E4BBC;
+        margin-left: 0;
+        padding-bottom: 3rem;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        text-align: left;
         
     }
 
-    .navbar-nav li {
-        display: flex;
-        justify-content: flex-start;
-        border-top: 2px solid #7E4BBC;
-        align-items: center;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        margin-top: 32px;
+    .button-contact {
+        padding: 0;
     }
+
+
 
 }
 
