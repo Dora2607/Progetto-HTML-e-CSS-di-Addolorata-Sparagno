@@ -1,0 +1,194 @@
+
+
+/* Typography link */
+
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*Navbar*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 6rem;  
+    padding-top: 0.1rem;
+    background-color: #EDE8F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 100;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EDE8F7;
+    z-index: -1;
+
+}
+
+.navbar a {    
+    text-align: end;
+    margin-left: 3rem;
+}
+
+
+.navbar a:link,
+.navbar a:visited {
+    color: #7E4BBC;
+}
+
+.navbar a:hover {
+    color: #858C8F;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+#check {
+    display: none;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 5%;
+
+    color: #858C8F;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Button Contact*/
+
+.navbar button {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 0.3rem;
+    border: 1px solid #7E4BBC;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    margin-left: 3rem;
+    
+}
+
+.navbar button:hover {
+    border: 2px solid #858C8F;
+}
+
+.navbar button:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) ;
+    border: none;
+    border: 1px solid #7E4BBC;
+}
+
+a.last-link {
+    margin-left: 0;
+}
+
+/*BreakPoints*/ 
+
+
+@media only screen and (max-width: 991px) {
+    
+    .header {
+        padding-left: 3rem;
+        height: 84;
+
+    }
+
+    .header img {
+        display: flex ;
+        max-width: 140px;
+    }
+
+    .header::before {
+        padding-bottom: 1rem;
+    }
+ 
+
+    .toggle-btn {
+        display: inline-flex;
+        padding-right: 2rem;
+    }
+
+    #check:checked~.toggle-btn #menu-icon {
+        display: none;
+    } 
+
+    .toggle-btn #close-icon {
+        display: none;
+    }
+
+    #check:checked~.toggle-btn #close-icon {
+        display: block;
+    } 
+
+    .navbar{ 
+        position: absolute;
+        top: 84px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #EDE8F7;
+        backdrop-filter: blur(8px);        
+        padding-left: 4rem;
+        padding-right: 5rem;
+        overflow: hidden;
+        transition: 0.4s ease;   
+
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    input[type=checkbox]:checked~.navbar {
+        height: fit-content;
+        
+    }
+
+   
+
+    .navbar a {
+        display: block;
+        border-top: 2px solid #7E4BBC;
+        margin-left: 0;
+        padding-bottom: 3rem;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        text-align: left;
+        
+        
+    }
+
+    a.last-link {
+        border-top: none;
+        padding: 2px 4px 2px 4px;
+    }
+
+    .navbar button {
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 0.4rem 0.7rem 0.4rem 0.7rem;       
+    }
+
+
+
+
+
+
+
+}
+

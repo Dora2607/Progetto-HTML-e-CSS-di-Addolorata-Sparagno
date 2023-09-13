@@ -13,10 +13,12 @@ body {
 
 /*Typography*/ 
 h1 {
-
+    font-weight: 700;
+    font-size: 30px;
 }
-h2 {
 
+h2 {
+    
 }
 h3 {
 
@@ -28,210 +30,83 @@ h5 {
 
 }
 
-/*Typography ul, li*/
+p {
+    font-size: 20px;
+    line-height: 30px;
 
+}
 
-a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
+strong {
+    color: #7E4BBC;
+    font-weight: 600;
 }
 
 
-/*Navbar*/
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 3rem;
-    padding-right: 3rem;  
-    background-color: #EDE8F7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    
-
-    z-index: 100;
+article {
+    padding-top: 5rem;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+section {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+/* Intro Section */
+
+.intro-section {
     width: 100%;
     height: 100%;
-    background-color: #EDE8F7;
-    z-index: -1;
+    background: rgb(237,232,247);
+    background: linear-gradient(180deg, rgba(237,232,247,1) 0%, rgba(216,204,248,1) 35%, rgb(187, 163, 242) 100%);
 
 }
 
-.navbar a {    
-    text-align: end;
-    margin-left: 3rem;
+        
+        
+.img-intro img {
+    display: block;  
+    margin: 1rem 0 2rem 0; 
+}
+
+.description-intro {
+    margin: 2rem 0 2rem 0;
+
+}
+
+.description-intro h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.description-intro p {
+    padding: 0 2rem 0 2rem;
+    text-align: center;
 }
 
 
-.navbar a:link,
-.navbar a:visited {
-    color: #7E4BBC;
-}
-
-.navbar a:hover {
-    color: #858C8F;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-
-#check {
-    display: none;
-}
-
-.toggle-btn {
-    position: absolute;
-    right: 5%;
-
-    color: #858C8F;
-    font-size: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-
-/* Button Contact*/
-
-
-
-.button-contact {
-    text-decoration: none;
-    background-color: transparent;
-    font-size: 20px;
-    border-radius: 0.3rem;
-    border: 1px solid #7E4BBC;
-    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-    margin-left: 3rem;
-    
-}
-
-
-
-.button-contact a:link,
-.button-contact a:visited {
-    color: #7E4BBC;
-}
-
-
-.button-contact:hover  {
-    background-color:#7E4BBC;
-}
-
-.button-contact a:hover {
-    
-    color: white;
-    font-weight: 550;
-    font-size: 22px;
-    opacity: 0.90;
-    transition: opacity 0.2s;
-    transition: font-size 0.2s;
-}
-
-
-
-.button-contact a:active {
-    background-color: #7E4BBC;
-    opacity: 1;
-}
-
-a.last-link {
-    margin-left: 0;
-}
 
 /*BreakPoints*/ 
 
-@media only screen and (max-width: 991px) {
-    
-    .header {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .header img {
-        display: flex ;
-    }
-
-    .header::before {
-        padding-bottom: 1rem;
-    }
- 
-
-    .toggle-btn {
-        display: inline-flex;
-    }
-
-    #check:checked~.toggle-btn #menu-icon {
-        display: none;
-    } 
-
-    .toggle-btn #close-icon {
-        display: none;
-    }
-
-    #check:checked~.toggle-btn #close-icon {
-        display: block;
-    } 
-
-    .navbar{ 
-        position: absolute;
-        top: 96px;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background-color: #EDE8F7;
-        backdrop-filter: blur(8px);        
-        padding-left: 2rem;
-        padding-right: 2rem;
-        overflow: hidden;
-        transition: all 0.3s ease;
-
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    }
-
-    input[type=checkbox]:checked~.navbar {
-        height: fit-content;   
-    }
-
-   
-
-    .navbar a {
-        display: block;
-        border-top: 2px solid #7E4BBC;
-        margin-left: 0;
-        padding-bottom: 3rem;
-        padding-top: 0.5rem;
-        padding-left: 1rem;
-        text-align: left;
-        
-    }
-
-    a.last-link {
-        border-top: none;
-        padding: 2px 4px 2px 4px;
-    }
-
-    .button-contact {
-        display: block;
-        margin: auto;
-        margin-bottom: 1rem;       
-    }
-
-
-
-
-
-
+@media only screen and (min-width:768px) {
 
 }
+@media only screen and (min-width:992px) {
 
+    /* Intro Section */
+    
+    .intro-section {
+        display: flex;
+    }
+
+    .img-intro img {
+        max-width: 80vh;
+    }
+
+}
+@media only screen and (min-width:1200px){
+
+}
+@media only screen and (min-width:1400px){
+
+}
