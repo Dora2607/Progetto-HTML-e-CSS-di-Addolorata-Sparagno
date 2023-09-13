@@ -103,6 +103,8 @@ a {
 
 /* Button Contact*/
 
+
+
 .button-contact {
     text-decoration: none;
     background-color: transparent;
@@ -111,18 +113,24 @@ a {
     border: 1px solid #7E4BBC;
     padding: 0.3rem 0.6rem 0.3rem 0.6rem;
     margin-left: 3rem;
+    
 }
 
-.button-contact:link,
-.button-contact:visited {
+
+
+.button-contact a:link,
+.button-contact a:visited {
     color: #7E4BBC;
 }
 
-.button-contact a:hover {
-    color: white;
-}
-.button-contact:hover {
+
+.button-contact:hover  {
     background-color:#7E4BBC;
+}
+
+.button-contact a:hover {
+    
+    color: white;
     font-weight: 550;
     font-size: 22px;
     opacity: 0.90;
@@ -130,12 +138,16 @@ a {
     transition: font-size 0.2s;
 }
 
-.button-contact:active {
+
+
+.button-contact a:active {
     background-color: #7E4BBC;
     opacity: 1;
 }
 
-
+a.last-link {
+    margin-left: 0;
+}
 
 /*BreakPoints*/ 
 
@@ -204,9 +216,20 @@ a {
         
     }
 
-    .button-contact {
-        padding: 0;
+    a.last-link {
+        border-top: none;
+        padding: 2px 4px 2px 4px;
     }
+
+    .button-contact {
+        display: block;
+        margin: auto;
+        margin-bottom: 1rem;       
+    }
+
+
+
+
 
 
 
