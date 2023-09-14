@@ -102,7 +102,7 @@ section {
 
     p {
         font-size: 22px;
-        line-height: 31px;
+        line-height: 32px;
     
     }
 
@@ -132,7 +132,7 @@ section {
     }
     p {
         font-size: 24px;
-        line-height: 32px;
+        line-height: 34px;
     
     }
 
@@ -171,17 +171,13 @@ section {
     h1 {
         font-size: 36px;
     }
-    p {
-        font-size: 26px;
-        line-height: 33px;
-    
-    }
+
     
     /* Intro Section */
     
     .img-intro img {
         min-width: 560px;
-        width: 680px;
+        max-width: 680px;
         
         
     }   
@@ -194,11 +190,7 @@ section {
         font-size: 38px;
     }
 
-    p {
-        font-size: 28px;
-        line-height: 34px;
-    
-    }
+
 
     /* Intro Section */
 
