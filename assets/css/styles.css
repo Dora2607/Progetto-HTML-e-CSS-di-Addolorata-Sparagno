@@ -6,6 +6,7 @@
 
 /*Font*/
 body {
+    background-color: #EDE8F7;
     font-family: 'Roboto Flex', sans-serif;
     height: 100vh;
 }
@@ -18,14 +19,20 @@ h1 {
 }
 
 h2 {
-    
+    font-weight: 650;
+    font-size: 28px;
 }
+
 h3 {
-
+    font-weight: 600;
+    font-size: 26px;
 }
+
 h4 {
-
+    font-weight: 550;
+    font-size: 24px;
 }
+
 h5 {
 
 }
@@ -49,23 +56,21 @@ article {
 
 section {
     padding-bottom: 3rem;
-    padding-top: 2rem;
+    
 }
 
+
+
 /* Intro Section */
-
-
-
 
 .intro-section {
     width: 100%;
     height: 100%;
     background: rgb(237,232,247);
     background: linear-gradient(180deg, rgba(237,232,247,1) 0%, rgba(216,204,248,1) 35%, rgb(187, 163, 242) 100%);
-
+    padding-top: 2rem;
 }
-
-        
+       
         
 .img-intro img {
     display: block;  
@@ -89,6 +94,114 @@ section {
 
 
 
+/* Middle Section */
+
+.middle-description {
+    background-color: #bba3f2;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.middle-description h2 {
+    padding-top: 3rem;
+    margin: 0 2rem 1.5rem 2rem;
+    border-top: 4px double #383048;
+    text-align: center;
+}
+
+.middle-description p {
+    padding: 0 2.5rem 0 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Portfolio Section */
+
+.portfolio {
+    background-color: #EDE8F7;
+    margin-top: -4rem;
+}
+
+.portfolio h2 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.websites-section {
+    background: radial-gradient(circle, rgb(227, 218, 249) 0%, #e6efff 100%);
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.25rem double #31145b;
+    border-top: 0.25rem double #31145b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.websites-section h3 {
+    color:#31145b;
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+    align-self: flex-start;
+    
+}
+
+.card {
+    width: 352px;
+    height: 380px;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgba(0, 0, 0, 0.176);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    
+}
+
+.img-portfolio {
+    display: block;
+    max-width: 318px;
+}
+
+.card-body{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.card-body h4 {
+    color: #7E4BBC;
+    margin-bottom: 5px;
+}
+
+.card-body p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* Overlay */
+.card-img-overlay {
+    background-color: rgba( #B8CDF8, 0.6);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover, 
+.card-img-overlay:hover {
+        
+            opacity: 1;
+            visibility: visible;
+            transition: all 850ms;
+       
+}
+
 /*BreakPoints*/ 
 
 
@@ -100,11 +213,17 @@ section {
         font-size: 32px;
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
     p {
         font-size: 22px;
         line-height: 32px;
     
     }
+
+
 
     /* Intro Section */
 
@@ -119,9 +238,23 @@ section {
         flex-direction: column;
     }
 
+    .intro-section h1 {
+        padding-top: 1rem;
+    }
+
     .img-intro {
         align-self: center;
     }
+
+
+
+    /* Middle Section */
+
+
+    .middle-description p {
+        padding: 0 4rem 0 4rem;
+    }
+
 
 }
 @media only screen and (min-width:992px) {
@@ -130,6 +263,11 @@ section {
     h1 {
         font-size: 34px;
     }
+
+    h2 {
+        font-size: 32px;
+    }
+
     p {
         font-size: 24px;
         line-height: 34px;
@@ -164,6 +302,13 @@ section {
     
 
 
+    /* Middle Section */
+
+    .middle-description p {
+        padding: 0 6rem 0 6rem;
+    }
+
+
 }
 @media only screen and (min-width:1200px){
 
@@ -172,15 +317,25 @@ section {
         font-size: 36px;
     }
 
-    
+    h2 {
+        font-size: 34px;
+    }
+
+
     /* Intro Section */
     
     .img-intro img {
         min-width: 560px;
         max-width: 680px;
-        
-        
-    }   
+ 
+    }
+    
+    
+    /* Middle Section */
+
+    .middle-description p {
+        padding: 0 8rem 0 8rem;
+    }    
 
 }
 @media only screen and (min-width:1400px){
@@ -190,13 +345,25 @@ section {
         font-size: 38px;
     }
 
-
+    h2 {
+        font-size: 36px;
+    }
 
     /* Intro Section */
 
     .img-intro img {
         min-width: 680px;
         width: 800px;    
-    }     
+    }
+    
+    /* Middle Section */
+
+    .middle-description {
+        padding-top: 4rem;
+    }
+
+    .middle-description p {
+        padding: 0 10rem 0 10rem;
+    }   
 
 }
