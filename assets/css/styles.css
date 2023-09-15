@@ -149,18 +149,21 @@ section {
 
 .card {
     width: 352px;
-    height: 380px;
+    height: 440px;
     background-color: rgb(255,255,255);
     border: 1px solid rgba(0, 0, 0, 0.176);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 2rem;
     margin-bottom: 3rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     
 }
+
+
 
 .img-portfolio {
     display: block;
@@ -182,25 +185,8 @@ section {
 }
 
 
-/* Overlay */
-.card-img-overlay {
-    background-color: rgba( #B8CDF8, 0.6);
-    backdrop-filter: blur(6px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-}
 
-.card:hover, 
-.card-img-overlay:hover {
-        
-            opacity: 1;
-            visibility: visible;
-            transition: all 850ms;
-       
-}
+
 
 /*BreakPoints*/ 
 
@@ -296,7 +282,6 @@ section {
     .img-intro img {
         min-width: 465px;
         width: 560px;
-        
         margin: 0;
     }    
     
@@ -307,6 +292,31 @@ section {
     .middle-description p {
         padding: 0 6rem 0 6rem;
     }
+
+
+
+    /* Portfolio Section */
+
+    .websites-section {
+        border: 2px solid #31145b ;
+        margin: 0 3rem 3rem 3rem;
+        border-radius: 2.5rem;
+    }
+
+    .websites-section  .web-section-wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 2rem;
+        
+    }
+
+    .card {
+        margin-right: 1rem;
+    }
+
+
 
 
 }
@@ -335,7 +345,18 @@ section {
 
     .middle-description p {
         padding: 0 8rem 0 8rem;
-    }    
+    }
+    
+    /* Portfolio Section */
+
+    .web-section-wrap .card:first-of-type {
+        margin-left: 2rem;
+    }
+
+    .card {
+        margin-right: 2rem;
+    }
+
 
 }
 @media only screen and (min-width:1400px){
@@ -364,6 +385,16 @@ section {
 
     .middle-description p {
         padding: 0 10rem 0 10rem;
-    }   
+    }
+    
+    /* Portfolio Section */
+
+    .web-section-wrap .card:first-of-type {
+        margin-left: 3rem;
+    }
+
+    .card {
+        margin-right: 3rem;
+    }
 
 }
