@@ -1,0 +1,109 @@
+form {
+    padding-top: 5rem;
+}
+
+form h1 {
+    text-align: center;
+    color: #31145b;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-section {
+    margin-bottom: 2.8rem;
+}
+
+.form-row {
+    width: 100%;
+    margin-top: 24px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form-row .form-label {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.form-row .form-control {
+    padding: 0.35rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.4rem;
+    color: rgb(33, 37, 41);
+}
+
+#textarea {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.form-control:hover,
+.form-control:active  {
+    border: 1px solid rgb(230, 239, 255) ;
+    box-shadow: 5px 5px 10px rgba(230, 239, 255, 0.3);
+}
+
+/* Submit button */
+
+.form-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.submit-button {
+    background-color:#B8CDF8;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    border-radius: 3rem;
+    border: 1px solid #383048;
+    color: #383048;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    color: black;
+    transition: color 0.3s;  
+}
+
+.submit-button:active {
+    background-color: #e6efff;
+    transition: background-color 0.5s; 
+    border: none; 
+}
+
+
+@media only screen and (min-width:992px) {
+    .form-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+    }
+
+    .form-row-lg {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+    .form-section {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
