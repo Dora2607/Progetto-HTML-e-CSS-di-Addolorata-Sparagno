@@ -1,3 +1,31 @@
+/*Typography CV */
+
+.cv-section ul {
+    list-style-type: none;
+}
+
+.cv-section h3 {
+    margin-bottom: 1rem;
+    color: #a788e8;
+}
+
+.cv-section h5 {
+    color: #593d96;
+}
+
+.cv-section a {
+    font-size: 20px;
+}
+
+
+
+/*Styling CV */
+
+.cv-article {
+    background-color: #f0edf7;
+}
+
+
 
 .aside-article {
     background-color: #beafdd;
@@ -54,4 +82,197 @@
     padding: 1rem 3rem 1rem 3rem;
     margin: 0 1rem 0 1rem;
     
+}
+
+.cv-section  {
+    margin: 2rem 2rem 1rem 2rem;
+    padding-bottom: 2rem;
+}
+
+.cv-section p {
+    margin-left: 1rem; 
+}
+
+/*CV Section*/
+
+.language-section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+.language-section p {
+    margin-left: 0;
+}  
+
+
+.technical-skills-section h5 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .technical-skills-section .progress {
+    width: 100%;
+    height: 16px;
+    border-radius: 5px;
+    background-color: rgba(133, 140, 143, 0.5);
+  }
+  .technical-skills-section .progress .progress-bar {
+    height: 16px;
+    border-radius: 5px;
+    background-color: #7E4BBC;
+  }
+
+.project-section a,
+.website a {
+  color: #7E4BBC;
+  text-decoration: none;
+}
+.project-section a:hover,
+.website a:hover {
+  text-decoration: underline;
+  color: rgba(126, 75, 188, 0.8);
+}
+
+
+.contacts-section .address,
+.contacts-section .email,
+.contacts-section .number,
+.contacts-section .website {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.website a {
+    margin-left: 1rem;
+}
+
+/*BreakPoints*/
+
+@media only screen and (min-width: 768px) {
+    .aside-article .my-intro {
+      margin: 3rem 3rem 2rem 3rem;
+    }
+    .aside-article .my-intro .my-self {
+      flex-direction: row;
+      justify-content: space-around;
+
+    }
+    .aside-article .my-intro .my-self .my-img {
+      order: 2;
+    }
+    .aside-article .my-intro .my-self .name-job {
+      order: 1;
+    }
+
+    .aside-article .my-intro .profile p {
+      padding: 1rem 3rem 2rem 3rem;
+    }
+
+    .cv-section  {
+        margin: 4rem 4rem 0 4rem;
+        padding-left: 3rem;
+    }
+    
+    .cv-section p {
+        margin-left: 1rem; 
+    }
+
+    .cv-section h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .education-section p {
+        margin-bottom: 2rem;
+    }
+
+    .language-section ul,
+    .technical-skills-section ul,
+    .project-section .contacts-section ul {
+      padding-right: 4rem;
+    }
+
+    .language-section p {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .aside-article {
+        background-color: #d2c4f2;
+        width: fit-content;
+        max-width: 370px;
+        height: 1300px ;
+        margin: 0;
+        position: absolute;
+        top: auto;
+        left: 0px;
+        bottom: auto;  
+    }
+
+    
+
+
+    .aside-article .my-intro .my-self {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: middle;
+       
+       
+    }
+    .aside-article .my-intro .my-self .my-img {
+        order: 1;
+        margin-top: 2rem;
+       
+    }
+    .aside-article .my-intro .my-self .name-job {
+        order: 2;
+        margin-top: 2rem;
+    }
+
+    .aside-article .my-intro .profile p {
+      font-size: 18px;
+      margin-top: 1rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .cv-section {
+        position: relative;
+        left: 370px;
+        width: 50%;
+        margin-top: 2.5rem;
+        
+    }
+
+    .cv-section ul {
+        margin-left: 1rem;
+    }
+
+    .education-section {
+        padding-top: 5rem;
+    }
+
+    .contacts-section {
+        width: 294px;
+        position: absolute;
+        top: -850px;
+        left: -420px;
+      }
+
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    .contacts-section {
+        top: -850px;
+        margin-top: 2rem;
+    }    
+    
+
 }
