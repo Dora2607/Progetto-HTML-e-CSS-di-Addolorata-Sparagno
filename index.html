@@ -37,6 +37,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
 
+
+
     <!--Navbar toggler-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -47,7 +49,7 @@
 </head>
 
 <body>
-
+<div class="container-home">
     <!--Header-->
 
     <header class="header">
@@ -80,199 +82,214 @@
 
     <!--Main Page-->
 
-    <article>
+
+    <!--Intro Section-->
+    <section class="intro-section">
         
-        <!--Intro Section-->
-        <section class="intro-section">
-                                   
-            <picture class="img-intro">
-                <img src="./assets/img/Immagine-intro-section.svg" alt="image-intro-section" class="img-fluid"></a>
-            </picture>
-            <div class="description-intro">
-                <h1>Hello Everyone,</h1>
-                <p>
-                    sono Addolorata Sparagno, per semplicità Dora.
-                    <br> 
-                    Aspiro a diventare una <strong>Frontend Developer</strong>.
-                </p>
-            </div>
-                 
-        </section>
+        <div class="column-intro">
+        <div class="my-img-intro">
+            <img src="./assets/img/Foto Curriculum.jpg" alt="Foto di Addolorata Sparagno"></a>
+        </div>
+        <h1>Addolorata Sparagno WebSite</h1>
+        </div>
+        <img src="assets/img/Immagine-intro-section.svg" alt="Img skills section di Addolorata Sparagno" class="img-intro-section">       
+    </section>
 
 
-         <!--Middle Section-->
 
-        <section class="middle-section">
-
-            <div class="middle-description">
-                <h2>Cambiare direzione</h2>
-                <p>
-                    Ciao, mi chiamo Dora e sono prossima alla laurea in <strong>ingegneria edile</strong> . Ho sempre apprezzato i temi trattati nel mio percorso accademico, 
-                    ma sentivo anche il bisogno di esplorare <strong>nuovi orizzonti</strong> e di <strong>reinventarmi</strong>, senza sapere bene come fare. 
-                </p>
-                <p>
-                    Avevo già una certa familiarità con l’<strong>informatica</strong> , ma non mi ero mai decisa a intraprendere un percorso in questo ambito;
-                    fino a quando, all’inizio di quest’anno,ho deciso di lanciarmi in questa sfida, prima come <strong>autodidatta</strong> 
-                    (per scoprire se mi piacesse, e spoiler: non solo mi appassiona ma mi diverte),
-                    e poi iscrivendomi alla piattaforma <strong>Start2impact</strong>, 
-                    dove ho avuto la possibilità di approfondire e capire aspetti teorici che ignoravo totalmente e soprattutto di fare molta pratica.
-                </p>
-                <p>
-                    Da quando ho iniziato il corso, ho scoperto che il ruolo di <strong>frontend-devolper</strong> 
-                    non è solo “scrivere al pc”, ma è creare <strong>interfacce web</strong><a name="Portfolio"></a> che siano efficaci, 
-                    intuitive e belle da vedere per gli utenti.
-                </p>  
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bba3f2" fill-opacity="1" d="M0,96L1440,0L1440,0L0,0Z"></path></svg>
+    <!--Skills Section-->  
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <h3>Linguaggi</h3>
+        <ul class="skills">
+            <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/html-5.png" alt="html-5"/>HTML</li>
+            <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/css3.png" alt="css3"/>CSS</li>
+            <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/sass.png" alt="sass"/>SASS</li>
+            <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/git.png" alt="git"/>GIT</li>
+        </ul>
+        <h3>Tools</h3>
+        <ul class="skills">
+            <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/visual-studio.png" alt="visual-studio"/>Visual Studio Code</li>
+            <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/bootstrap.png" alt="bootstrap"/>Bootstrap</li>
+            <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/github.png" alt="github"/>Github</li>
+        </ul>
 
 
-        </section>
+    </section>
+
+    <!--Middle Section-->
+
+    <section class="middle-section">
+
+        <div class="middle-description">
+            <h2>Cambiare direzione</h2>
+            <p>
+                Ciao, mi chiamo Dora e sono prossima alla laurea in <strong>ingegneria edile</strong> . Ho sempre apprezzato i temi trattati nel mio percorso accademico, 
+                ma sentivo anche il bisogno di esplorare <strong>nuovi orizzonti</strong> e di <strong>reinventarmi</strong>, senza sapere bene come fare. 
+            </p>
+            <p>
+                Avevo già una certa familiarità con l’<strong>informatica</strong> , ma non mi ero mai decisa a intraprendere un percorso in questo ambito;
+                fino a quando, all’inizio di quest’anno,ho deciso di lanciarmi in questa sfida, prima come <strong>autodidatta</strong> 
+                (per scoprire se mi piacesse, e spoiler: non solo mi appassiona ma mi diverte),
+                e poi iscrivendomi alla piattaforma <strong>Start2impact</strong>, 
+                dove ho avuto la possibilità di approfondire e capire aspetti teorici che ignoravo totalmente e soprattutto di fare molta pratica.
+            </p>
+            <p>
+                Da quando ho iniziato il corso, ho scoperto che il ruolo di <strong>frontend-devolper</strong> 
+                non è solo “scrivere al pc”, ma è creare <strong>interfacce web</strong><a name="Portfolio"></a> che siano efficaci, 
+                intuitive e belle da vedere per gli utenti.
+            </p>  
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#bba3f2" fill-opacity="1" d="M0,96L1440,0L1440,0L0,0Z"></path></svg>
 
 
-        <!--Show Portfolio-->
-    
-        <section class="portfolio">
+    </section>
+
+
+
+
+    <!--Show Portfolio-->
+
+    <section class="portfolio">
+        
             
+        <h2>Il mio Portfolio</h2>
                 
-            <h2>Il mio Portfolio</h2>
-                    
-               
-                <!--WebSites Section-->
+            <!--WebSites Section-->    
                 
-                  
-                    
-                <div class="websites-section">
-                
-                    <h3>Progetti: Web Sites</h3>      
+            <div class="websites-section">
+            
+                <h3>Progetti: Web Sites</h3>      
 
-                    <!--Hotel Pomelia-->
-                    
-                    <div class="web-section-wrap">
+                <!--Hotel Pomelia-->
+                
+                <div class="web-section-wrap">
 
-                        <div class="card">
-                            <img src="./assets/img/Websites/Hotel Pomelia.jpg" class="img-portfolio" alt="Hotel-Pomelia img">
-                            <div class="card-body">
-                                <h4>Hotel Pomelia</h4>
-                                <p class="card-text">Progetto realizzato per la piattaforma Start2impact: il sito web aveva lo scopo di promuovere un "fittizio" Eco hotel nella zona di Siracusa.</p> 
-                                <div class="card-img-overlay">
-                                    <a class="portfolio-button" href="#" role="button" target="_blank">See More</a>
-                                </div>
-                            </div>    
-                        </div>
-                        
-                        
-                        <!--Portfolio WebSite-->
-                        
-                        <div class="card">
-                            <img src="./assets/img/Websites/Portfolio Website.jpg" class="card-img-top img-portfolio" alt="Portfolio-Website img">
-                            <div class="card-body">
-                                <h4>Portfolio Website</h4>
-                                <p class="card-text">Progetto realizzato per la piattaforma Start2impact: lo scopo era quello di sviluppare un sito personale.</p> <!--da riscrivere-->
-                            </div>
+                    <div class="card">
+                        <img src="./assets/img/Websites/Hotel Pomelia.jpg" class="img-portfolio" alt="Hotel-Pomelia img">
+                        <div class="card-body">
+                            <h4>Hotel Pomelia</h4>
+                            <p class="card-text">Progetto realizzato per la piattaforma Start2impact: il sito web aveva lo scopo di promuovere un "fittizio" Eco hotel nella zona di Siracusa.</p> 
                             <div class="card-img-overlay">
-                                <a class="portfolio-button text-center" href="https://dora2607.github.io/Progetto-HTML-e-CSS-di-Addolorata-Sparagno/" role="button" target="_blank">See More</a>
+                                <a class="portfolio-button" href="#" role="button" target="_blank">See More</a>
                             </div>
-                        </div>
-                        
-
-                        <!--Future WebSites-->
-                        
-                        <div class="card">
-                            <!--<a href="https://it.freepik.com/vettori-gratuito/illustrazione-sveglia-dell-icona-del-fumetto-del-computer-e-del-gatto-concetto-dell-icona-di-tecnologia-animale-isolato-stile-cartone-animato-piatto_13417973.htm#query=gatto%20pc&position=1&from_view=search&track=ais">-->
-                            <img src="./assets/img/Websites/Future Project.jpg" class="card-img-top img-portfolio" alt="Future-Website img"></a>
-                            <div class="card-body">
-                                <h4>Progetti Futuri</h4>
-                                <p class="card-text">Questo spazio è dedicato all'inserimento di progetti futuri.</p>
-                            </div>
-                            <div class="card-img-overlay">
-                                <a class="portfolio-button " href="#" role="button">See More</a>
-                            </div>
-                        </div>     
+                        </div>    
                     </div>
-                </div>
+                    
+                    
+                    <!--Portfolio WebSite-->
+                    
+                    <div class="card">
+                        <img src="./assets/img/Websites/Portfolio Website.jpg" class="card-img-top img-portfolio" alt="Portfolio-Website img">
+                        <div class="card-body">
+                            <h4>Portfolio Website</h4>
+                            <p class="card-text">Progetto realizzato per la piattaforma Start2impact: lo scopo era quello di sviluppare un sito personale.</p> <!--da riscrivere-->
+                        </div>
+                        <div class="card-img-overlay">
+                            <a class="portfolio-button text-center" href="https://dora2607.github.io/Progetto-HTML-e-CSS-di-Addolorata-Sparagno/" role="button" target="_blank">See More</a>
+                        </div>
+                    </div>
+                    
 
+                    <!--Future WebSites-->
+                    
+                    <div class="card">
+                        <!--<a href="https://it.freepik.com/vettori-gratuito/illustrazione-sveglia-dell-icona-del-fumetto-del-computer-e-del-gatto-concetto-dell-icona-di-tecnologia-animale-isolato-stile-cartone-animato-piatto_13417973.htm#query=gatto%20pc&position=1&from_view=search&track=ais">-->
+                        <img src="./assets/img/Websites/Future Project.jpg" class="card-img-top img-portfolio" alt="Future-Website img"></a>
+                        <div class="card-body">
+                            <h4>Progetti Futuri</h4>
+                            <p class="card-text">Questo spazio è dedicato all'inserimento di progetti futuri.</p>
+                        </div>
+                        <div class="card-img-overlay">
+                            <a class="portfolio-button " href="#" role="button">See More</a>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+
+            
+
+
+            <!--Architeture Section-->
+                
+                
+            <div class="websites-section">
+
+                <h3>Extra: Architettura</h3>
+                <div class="web-section-wrap">
+
+                <!--School-->
+                
+                    <div class="card">
+                        <img src="./assets/img/Architecture/scuola-elementare.jpg" class="card-img-top img-portfolio" alt="School img">
+                        <div class="card-body">
+                            <h4>Complesso scolastico</h4>
+                            <p class="card-text">Realizzazione di una scuola elementare in provincia di Napoli.<br>Progetto di gruppo</p>
+                        </div>
+                    </div>
+                
+            
+                <!--Padiglione-->
+                
+                    <div class="card">
+                        <img src="./assets/img/Architecture/padiglione.jpg" class="card-img-top img-portfolio" alt="Padiglione img">
+                        <div class="card-body">
+                            <h4>Padiglione</h4>
+                            <p class="card-text">Il padiglione è stato progettato come elemento di collegamento tra le sponde del fiume. Aveva lo scopo di accogliere eventi e fiere. <br>
+                            Progetto individuale
+                            </p>
+                        </div>
+                    </div>
+
+                <!--Ostello-->
+                
+                    <div class="card">
+                        <img src="./assets/img/Architecture/ostello.jpg" class="card-img-top img-portfolio" alt="Ostello img">
+                        <div class="card-body">
+                            <h4>Ostello</h4>
+                            <p class="card-text">La struttura realizzata prevedeva molte aree comuni e aree studio, nonchè aree di pernottamento per gli studenti. Molta importanza fu data agli spazi verdi, 
+                                presenti su tutta la copertura dell'edificio e su ogni singolo piano. <br> Progetto di gruppo 
+                            </p>
+                        </div>
+                    </div>
                 
 
-
-                <!--Architeture Section-->
-                    
-                    
-                <div class="websites-section">
-
-                    <h3>Extra: Architettura</h3>
-                    <div class="web-section-wrap">
-
-                    <!--School-->
-                    
-                        <div class="card">
-                            <img src="./assets/img/Architecture/scuola-elementare.jpg" class="card-img-top img-portfolio" alt="School img">
-                            <div class="card-body">
-                                <h4>Complesso scolastico</h4>
-                                <p class="card-text">Realizzazione di una scuola elementare in provincia di Napoli.<br>Progetto di gruppo</p>
-                            </div>
-                        </div>
-                    
+                <!--Costruzioni-->
                 
-                    <!--Padiglione-->
-                    
-                        <div class="card">
-                            <img src="./assets/img/Architecture/padiglione.jpg" class="card-img-top img-portfolio" alt="Padiglione img">
-                            <div class="card-body">
-                                <h4>Padiglione</h4>
-                                <p class="card-text">Il padiglione è stato progettato come elemento di collegamento tra le sponde del fiume. Aveva lo scopo di accogliere eventi e fiere. <br>
-                                Progetto individuale
-                                </p>
-                            </div>
+                    <div class="card">
+                        <img src="./assets/img/Architecture/struttura ricreativa.jpg" class="card-img-top img-portfolio" alt="Sezione struttura img">
+                        <div class="card-body">
+                            <h4>Laboratorio Grafico</h4>
+                            <p class="card-text">In questo progetto sono stati elaborati spazi destinati alla comunità, in particolare l'edificio è stato sviluppato a partire dal progetto "Bagnoli Futura". 
+                                <br> Progetto di gruppo
+                            </p>
                         </div>
+                    </div>
+                
 
-                    <!--Ostello-->
-                    
-                        <div class="card">
-                            <img src="./assets/img/Architecture/ostello.jpg" class="card-img-top img-portfolio" alt="Ostello img">
-                            <div class="card-body">
-                                <h4>Ostello</h4>
-                                <p class="card-text">La struttura realizzata prevedeva molte aree comuni e aree studio, nonchè aree di pernottamento per gli studenti. Molta importanza fu data agli spazi verdi, 
-                                    presenti su tutta la copertura dell'edificio e su ogni singolo piano. <br> Progetto di gruppo 
-                                </p>
-                            </div>
+                <!--Progettazione Urbana-->
+                
+                    <div class="card">
+                        <img src="./assets/img/Architecture/Riqualificazione urbana.jpg" class="card-img-top img-portfolio" alt="Progettazione Urbana img">
+                        <div class="card-body">
+                            <h4>Riqualificazione Urbana</h4>
+                            <p class="card-text">Il progetto prevedeva la riqualificazione di un ex ospadale militare, nella zona di Napoli. Tale riqualificazione doveva avvenire attraverso la costruzione di 
+                                un padiglione, di una rampa e un landmark. <br> Progetto di gruppo 
+                            </p>
                         </div>
-                    
+                    </div>
+                </div>    
+            </div>
 
-                    <!--Costruzioni-->
-                    
-                        <div class="card">
-                            <img src="./assets/img/Architecture/struttura ricreativa.jpg" class="card-img-top img-portfolio" alt="Sezione struttura img">
-                            <div class="card-body">
-                                <h4>Laboratorio Grafico</h4>
-                                <p class="card-text">In questo progetto sono stati elaborati spazi destinati alla comunità, in particolare l'edificio è stato sviluppato a partire dal progetto "Bagnoli Futura". 
-                                    <br> Progetto di gruppo
-                                </p>
-                            </div>
-                        </div>
-                    
+    </section>
 
-                    <!--Progettazione Urbana-->
-                    
-                        <div class="card">
-                            <img src="./assets/img/Architecture/Riqualificazione urbana.jpg" class="card-img-top img-portfolio" alt="Progettazione Urbana img">
-                            <div class="card-body">
-                                <h4>Riqualificazione Urbana</h4>
-                                <p class="card-text">Il progetto prevedeva la riqualificazione di un ex ospadale militare, nella zona di Napoli. Tale riqualificazione doveva avvenire attraverso la costruzione di 
-                                    un padiglione, di una rampa e un landmark. <br> Progetto di gruppo 
-                                </p>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
+</div>
     
-        </section>
-    </article>
-
      <!--Footer-->
 
-    <footer class="footer-section">
+    <footer>
         
-
+        <div class="footer-section">
             <!-- Section: Social media -->
             <section>
                 <p>
@@ -311,12 +328,19 @@
             <div class="copyright">
                 <h6>© AS 2023</h6> 
             </div>
-        
+        </div>
     </footer>
     
 
     <!--Source-->
     <!--img intro section <a href="https://storyset.com/web"></a>-->
+    <!--<a  href="https://icons8.com/icon/52539/github">GitHub</a> icon by <a href="https://icons8.com">Icons8</a>-->
+    <!--<a  href="https://icons8.com/icon/ZMc42tPbG32H/bootstrap">Bootstrap</a> icon by <a href="https://icons8.com">Icons8</a>-->
+    <!--<a  href="https://icons8.com/icon/i19Ns28h30P4/visual-studio">Visual Studio</a> icon by <a href="https://icons8.com">Icons8</a>-->
+    <!--<a  href="https://icons8.com/icon/xBKl2pdJg5kk/git">Git</a> icon by <a href="https://icons8.com">Icons8</a>-->
+    <!--<a  href="https://icons8.com/icon/5cVdiiKKi0vX/css3">CSS3</a> icon by <a href="https://icons8.com">Icons8</a>-->
+    <!--<a  href="https://icons8.com/icon/qsQZWvMuX4ad/sass">Sass</a> icon by <a href="https://icons8.com">Icons8</a>-->
+    <!--<a  href="https://icons8.com/icon/CMVEhOBzk3Zp/html-5">HTML 5</a> icon by <a href="https://icons8.com">Icons8</a>-->
 
 </body>
 </html>
