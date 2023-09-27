@@ -57,111 +57,113 @@
 </head>
 
 <body>
-
-    <!--Header-->
-
-    <header class="header">
-
-        <!--Menù-->
-
-        <a class="logoAS" href="#"><img src="../assets/logo/Logo.png" alt="LogoAS"></a>
+    <div id="page-container">
+        <div id="content-wrap">
         
-        
-        <input type="checkbox" id="check">
-        <label for="check" class="toggle-btn">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-        
-        
-        <nav class="navbar">
-            
-            <a aria-current="page" href="../index.html" target="_blank">Home</a>
-        
-            <a  href="../index.html#Portfolio" target="_blank">Portfolio</a>
-        
-            <a  href="../about/about.html" target="_blank">About</a>
-        
-            <button><a class="last-link" href="contacts.html">Contact</a></button>
-            
-        </nav>
-        
-    </header>
+            <!--Header-->
 
-    <!-- Form Section-->
+            <header class="header">
 
-    <form>
+                <!--Menù-->
 
-        <h1>Inviami un messaggio!</h1>
-
-        <div class="form-section">
-            
+                <a class="logoAS" href="#"><img src="../assets/logo/Logo.png" alt="LogoAS"></a>
                 
-                <div class="form-row form-row-lg">
-                    <label for="name" class="form-label">Nome<span>*</span></label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
                 
-                <div class="form-row form-row-lg">
-                    <label for="surname" class="form-label">Cognome<span>*</span></label>
-                    <input type="text" class="form-control" id="surname" required>
+                <input type="checkbox" id="check">
+                <label for="check" class="toggle-btn">
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                    <i class='bx bx-x' id="close-icon"></i>
+                </label>
+                
+                
+                <nav class="navbar">
+                    
+                    <a aria-current="page" href="../index.html" target="_blank">Home</a>
+                
+                    <a  href="../index.html#Portfolio" target="_blank">Portfolio</a>
+                
+                    <a  href="../about/about.html" target="_blank">About</a>
+                
+                    <button><a class="last-link" href="contacts.html">Contact</a></button>
+                    
+                </nav>
+                
+            </header>
+
+            <!-- Form Section-->
+
+            <form>
+
+                <h1>Inviami un messaggio!</h1>
+
+                <div class="form-section">
+                    
+                        
+                        <div class="form-row form-row-lg">
+                            <label for="name" class="form-label">Nome<span>*</span></label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        
+                        <div class="form-row form-row-lg">
+                            <label for="surname" class="form-label">Cognome<span>*</span></label>
+                            <input type="text" class="form-control" id="surname" required>
+                        </div>
+
+                        <div class="form-row">
+                        <label for="email" class="form-label">Email<span>*</span></label>
+                        <input type="email" class="form-control" id="email" required>
+                        </div>
+                    
+                        <div class="form-row">
+                            <label for="textarea" class="form-label">Il tuo messaggio</label>
+                            <textarea class="form-control" id="textarea" rows="6" placeholder="Inserisci qui il tuo messaggio"></textarea>
+                        </div>
+
+                        <div class="form-button">
+                        <button type="submit" class="submit-button" onclick="SendMail()">Invia</button>
+                        </div>
+                    
                 </div>
+            </form>    
+        </div>    
+        <!--Footer-->
 
-                <div class="form-row">
-                  <label for="email" class="form-label">Email<span>*</span></label>
-                  <input type="email" class="form-control" id="email" required>
+        <footer id="footer">
+            
+            <div class="footer-section">
+                <!-- Section: Social media -->
+                <section>
+                    <p>
+                    Se ti piace ciò che vedi, Contattami
+                    <br>oppure
+                    <br>seguimi sui Social</p>
+
+                    
+                    
+                    <div class="logos-social">
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/DSparagno" target="_blank">
+                        <span><img src="../assets/social-media/icons8-twitter.svg" alt="twitter"></span></a>
+                    
+                        <!-- Linkedin -->
+                        <a href="https://www.linkedin.com/in/addolorata-sparagno/" target="_blank">
+                        <span><img src="../assets/social-media/icons8-linkedin.svg" alt="linkedin"></span></a>
+
+                        <!-- Github -->
+                        <a href="https://github.com/Dora2607" target="_blank">
+                        <span><img src="../assets/social-media/icons8-github.svg" alt="linkedin"></span></a>
+                    </div>
+                    
+
+                </section>
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    <h6>© AS 2023</h6> 
                 </div>
-               
-                <div class="form-row">
-                    <label for="textarea" class="form-label">Il tuo messaggio</label>
-                    <textarea class="form-control" id="textarea" rows="6" placeholder="Inserisci qui il tuo messaggio"></textarea>
-                </div>
-
-                <div class="form-button">
-                  <button type="submit" class="submit-button" onclick="SendMail()">Invia</button>
-                </div>
-            
-        </div>
-    </form>    
-
-    <!--Footer-->
-
-    <footer class="footer-section">
-        
-
-        <!-- Section: Social media -->
-        <section>
-            <p>
-            Se ti piace ciò che vedi, Contattami
-            <br>oppure
-            <br>seguimi sui Social</p>
-
-            
-            
-            <div class="logos-social">
-
-                <!-- Twitter -->
-                <a href="https://twitter.com/DSparagno" target="_blank">
-                <span><img src="../assets/social-media/icons8-twitter.svg" alt="twitter"></span></a>
-            
-                <!-- Linkedin -->
-                <a href="https://www.linkedin.com/in/addolorata-sparagno/" target="_blank">
-                <span><img src="../assets/social-media/icons8-linkedin.svg" alt="linkedin"></span></a>
-
-                <!-- Github -->
-                <a href="https://github.com/Dora2607" target="_blank">
-                <span><img src="../assets/social-media/icons8-github.svg" alt="linkedin"></span></a>
             </div>
-            
-
-        </section>
-
-        <!-- Copyright -->
-        <div class="copyright">
-            <h6>© AS 2023</h6> 
-        </div>
-    
-</footer>    
-
+        </footer>    
+    </div>    
 </body>
 </html>

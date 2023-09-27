@@ -16,12 +16,21 @@ body {
     height: 100%;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 320px;
+}
+
 
 /*Typography*/ 
 h1 {
     font-weight: 700;
     font-size: 30px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Courgette', cursive;
     color: #7E4BBC;
 }
 
@@ -79,12 +88,9 @@ strong {
 
 .my-img-intro {
    
-    border: 4px double #7E4BBC;
-    border-radius: 100%;
-    width: 170px;
-    height: 170px;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    
 }
 
 .my-img-intro img {
@@ -94,10 +100,7 @@ strong {
     border-radius: 100%;
     object-fit: cover;
     object-position: top;
-    position: relative;
-    bottom: 1.2rem;
-    left: 1.2rem;
-     
+    box-shadow: -10px 10px 8px #383048; 
 }
 
 .column-intro {
@@ -136,7 +139,7 @@ strong {
 
 .skills-section h2 {
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .skills-section h3 {
@@ -309,10 +312,17 @@ strong {
 
 /* Footer */
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 320px;
+}
+
 
 .footer-section {
     background-color: #383048;
-    height: 350px;
+    height: 320px;
     color: white;
     text-align: center;
     padding-top: 3rem;
@@ -330,7 +340,13 @@ strong {
 }
 
 .backtotop {
-    margin-bottom: 0.5rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.footer-section h6 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -388,7 +404,9 @@ strong {
 
     /* Skills Section */
 
-
+    .skills-section {
+        padding: 0 4rem 0 4rem;
+    }
 
 
     /* Middle Section */
@@ -452,7 +470,9 @@ strong {
 
     /* Skills Section */
 
-
+    .skills-section {
+        padding: 0 6rem 0 6rem;
+    }
 
     /* Middle Section */
 
@@ -488,13 +508,7 @@ strong {
     }
 
     /* Footer */
-    .backtotop {
-        position: relative;
-        top: -2.5rem;
-        right: 2.5rem;
-        margin-bottom: 0;
-        text-align: end;
-    }
+
 
 
 
@@ -534,7 +548,9 @@ strong {
 
     /* Skills Section */
 
-
+    .skills-section {
+        padding: 0 8rem 0 8rem;
+    }
     
     
     /* Middle Section */
@@ -582,6 +598,9 @@ strong {
     
     /* Skills Section */
 
+    .skills-section {
+        padding: 0 10rem 0 10rem;
+    }
     
     /* Middle Section */
 
