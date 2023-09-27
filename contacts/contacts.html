@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../assets/css/contacts.css">
 
     <!--Emailjs-->
-    <script src="../assets/js/contact.js"></script>
+    
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -92,39 +92,48 @@
 
             <!-- Form Section-->
 
-            <form>
+            <div class="form-page">
 
-                <h1>Inviami un messaggio!</h1>
-
-                <div class="form-section">
-                    
-                        
-                        <div class="form-row form-row-lg">
-                            <label for="name" class="form-label">Nome<span>*</span></label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        
-                        <div class="form-row form-row-lg">
-                            <label for="surname" class="form-label">Cognome<span>*</span></label>
-                            <input type="text" class="form-control" id="surname" required>
-                        </div>
-
-                        <div class="form-row">
-                        <label for="email" class="form-label">Email<span>*</span></label>
-                        <input type="email" class="form-control" id="email" required>
-                        </div>
-                    
-                        <div class="form-row">
-                            <label for="textarea" class="form-label">Il tuo messaggio</label>
-                            <textarea class="form-control" id="textarea" rows="6" placeholder="Inserisci qui il tuo messaggio"></textarea>
-                        </div>
-
-                        <div class="form-button">
-                        <button type="submit" class="submit-button" onclick="SendMail()">Invia</button>
-                        </div>
-                    
+                <div class="title-form-page">
+                    <h1>Inviami un messaggio!</h1>
+                    <img width="64" height="64" src="https://img.icons8.com/nolan/64/task.png" alt="task"/>
                 </div>
-            </form>    
+
+                <section class="form-section">
+                    <div class="form-container">
+                        <form id="form" onsubmit="SendMail()"; reset(); return false >
+
+                            <div class="form-row form-row-lg">
+                                <label for="name" class="form-label">Nome<span>*</span></label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            
+                            <div class="form-row form-row-lg">
+                                <label for="surname" class="form-label">Cognome<span>*</span></label>
+                                <input type="text" class="form-control" id="surname" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email" class="form-label">Email<span>*</span></label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        
+                            <div class="form-row">
+                                <label for="textarea" class="form-label">Il tuo messaggio</label>
+                                <textarea class="form-control" id="textarea" rows="6" placeholder="Inserisci qui il tuo messaggio"></textarea>
+                            </div>
+
+                            <div class="form-button">
+                                <button type="submit" class="submit-button">Invia</button>
+                            </div>
+                            
+                        </form>
+                        <p id="log"></p>
+                    </div>
+                </section>
+
+            </div>
+            
         </div>    
         <!--Footer-->
 
@@ -164,6 +173,12 @@
                 </div>
             </div>
         </footer>    
-    </div>    
+    </div> 
+    
+    <script src="../assets/js/contact.js"></script>
+
+    <!--Source-->
+    <!--<a  href="https://icons8.com/icon/5CtiUq0Pvtnd/attività">Attività</a> icon by <a href="https://icons8.com">Icons8</a>-->
+
 </body>
 </html>

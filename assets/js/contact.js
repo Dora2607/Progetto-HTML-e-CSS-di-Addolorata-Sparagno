@@ -1,3 +1,16 @@
+addEventListener("submit", (event) => {});
+
+onsubmit = (event) => {};
+
+function logSubmit(event) {
+    event.preventDefault();
+  }
+  
+  const form = document.getElementById("form");
+  const log = document.getElementById("log");
+  form.addEventListener("submit", logSubmit);
+
+
 
 function SendMail() {
     var params = {
@@ -23,4 +36,5 @@ function SendMail() {
             })
         .catch((err) => console.log(err));
 }
+
 
