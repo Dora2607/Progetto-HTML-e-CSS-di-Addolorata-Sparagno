@@ -31,7 +31,7 @@
 .aside-article {
     background-color: #beafdd;
     height: 100%;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 .my-intro {
@@ -72,7 +72,7 @@
         padding-bottom: 1rem;
         text-align: center;
         color: #7E4BBC;
-        font-family: "Pacifico', cursive;";
+        
 }
 
 .name-job h2 {
